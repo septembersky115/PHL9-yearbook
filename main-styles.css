@@ -1,11 +1,119 @@
 /* All pages */
 * {
-  background-color: blueviolet;
-}
-.topnav {
-
+  background-color: #d3d3d3;
+  font-family: 'Rubik', Courier, monospace;
 }
 
 body {
 
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+header {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d3d3d3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#logo {
+  display: flex;
+  max-width: 25%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #00AFF0;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 15%;
+  margin-bottom: 30px;
+  padding: 0 8px;
+}
+
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* div.gallery:hover {
+  border: 1px solid #777;
+} */
+
+div.gallery img {
+  margin: 10px;
+  border: 3px solid white;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  max-width: 40%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
